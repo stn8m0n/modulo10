@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden; /*todo conteudo que ultrapassar da tela não será visível*/
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -28,6 +32,7 @@ header > .container {
 nav {
     background-color: #575fcf;
     padding: 16px 0;
+    display: none; /*se o menu nv não esta sendo exibido, quando clicado ele será exibido menu toggle, slide down/slideup*/
 }
 
 nav li{
@@ -46,6 +51,7 @@ nav li a {
 
 .menu-hamburguer{
     width: 32px;
+    cursor: pointer; /*mudar curso e UX entender que  tem iteração*/
 }
 
 .menu-hamburguer span{
