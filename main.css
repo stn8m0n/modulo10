@@ -23,7 +23,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -61,3 +60,21 @@ nav li a {
     display: block; /*block pq ele já é inline*/
     margin-bottom: 4px;
 }
+
+.container-flex{ /*.var = class / #var = id*/
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+ /*parei na aula2 com 07:34 de vídeo*/
