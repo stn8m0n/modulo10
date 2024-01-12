@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container container-flex">
             <h1> Ebac Motors</h1>
             <div class="menu-hamburguer">
                 <span></span>
@@ -21,30 +21,89 @@
                 <span></span>
             </div>
         </div>
-        <div class="container">
             <nav>
-                <ul>
-                    <li>
-                        <a href="#">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#">Em destaque</a>
-                    </li>
-                    <li>
-                        <a href="#">Promoções</a>
-                    </li>
-                    <li>
-                        <a href="#">Contato</a>
-                    </li>
-                </ul>
+                <div class="container">
+                    <ul>
+                        <li>
+                            <a href="#">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="#">Em destaque</a>
+                        </li>
+                        <li>
+                            <a href="#">Promoções</a>
+                        </li>
+                        <li>
+                            <a href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
             </nav>
-        </div>
     </header>
     <div id="carosel-imagens">
         <img src="./images/slide1.png" alt="Porche">
         <img src="./images/slide2.png" alt="Bmw">
         <img src="./images/slide3.png" alt="Ford GT500">
     </div>
+    
+    <section id="sobre-a-loja">
+        <div class="container container-flex">
+            <img src="./images/loja.jpg" alt="Imagem da loja Ebac Motors">
+            <div>
+                <h2>Sobre a Ebac Motors</h2>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsa assumenda dolorum error omnis harum quibusdam officiis illo. Ipsum voluptates, deserunt dolorem perferendis facere voluptate quidem illo beatae eum eius.
+                </p>
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus ipsa assumenda dolorum error omnis harum quibusdam officiis illo. Ipsum voluptates, deserunt dolorem perferendis facere voluptate quidem illo beatae eum eius.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <h2>Em destaque</h2>
+            <ul class="container-flex lista-veiculos">
+                <li>
+                    <img src="./images/carro-bmw.png" alt="BMWZ4">
+                    <h3>BMWZ4</h3>
+                    <p>Cambio auto, 4 portas, vidros e travas eletricas.</p>
+                    <strong>75k</strong>
+                    <button type="button">tenho interresse</button>
+                </li>
+                <li class="item-central">
+                    <img src="./images/carro-bmw.png" alt="BMWZ4">
+                    <h3>BMWZ4</h3>
+                    <p>Cambio auto, 4 portas, vidros e travas eletricas.</p>
+                    <strong>75k</strong>
+                    <button type="button">tenho interresse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="BMWZ4">
+                    <h3>BMWZ4</h3>
+                    <p>Cambio auto, 4 portas, vidros e travas eletricas.</p>
+                    <strong>75k</strong>
+                    <button type="button">tenho interresse</button>
+                </li>
+                <li>
+                    <img src="./images/carro-bmw.png" alt="BMWZ4">
+                    <h3>BMWZ4</h3>
+                    <p>Cambio auto, 4 portas, vidros e travas eletricas.</p>
+                    <strong>75k</strong>
+                    <button type="button">tenho interresse</button>
+                </li>
+                <li  class="item-central">
+                    <img src="./images/carro-bmw.png" alt="BMWZ4">
+                    <h3>BMWZ4</h3>
+                    <p>Cambio auto, 4 portas, vidros e travas eletricas.</p>
+                    <strong>75k</strong>
+                    <button type="button">tenho interresse</button>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
@@ -53,6 +112,10 @@
         $('#carosel-imagens').slick({
             autoplay: true,
         });
+
+        $('.menu-hamburguer').click(function(){
+            $('nav').slideToggle();
+        })
     })
 </script>
 </body>

@@ -5,6 +5,10 @@
     font-family: 'Roboto', sans-serif;
 }
 
+html {
+    overflow-x: hidden; /*todo conteudo que ultrapassar da tela não será visível*/
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -19,7 +23,6 @@ header {
 }
 
 header > .container {
-    display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 16px;
@@ -28,6 +31,7 @@ header > .container {
 nav {
     background-color: #575fcf;
     padding: 16px 0;
+    display: none; /*se o menu nv não esta sendo exibido, quando clicado ele será exibido menu toggle, slide down/slideup*/
 }
 
 nav li{
@@ -46,6 +50,7 @@ nav li a {
 
 .menu-hamburguer{
     width: 32px;
+    cursor: pointer; /*mudar curso e UX entender que  tem iteração*/
 }
 
 .menu-hamburguer span{
@@ -55,3 +60,44 @@ nav li a {
     display: block; /*block pq ele já é inline*/
     margin-bottom: 4px;
 }
+
+.container-flex{ /*.var = class / #var = id*/
+    display: flex;
+}
+
+#sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section{
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+.lista-veiculos {
+    flex-wrap: wrap;
+}
+
+ .lista-veiculos li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+ }
+
+ .lista-veiculos li img {
+    max-width: 100%;
+ }
+
+ .lista-veiculos li h3 {
+    margin: 16px 0;
+ }
+
+ .item-central {
+    margin: 0 5%;
+ }
+
+ /*PAREI EM 13:39*/
