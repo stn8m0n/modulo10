@@ -100,4 +100,21 @@ section h2 {
     margin: 0 5%;
  }
 
- /*PAREI EM 13:39*/
+ .lista-veiculos li button {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border: none;
+    background-color: #119759;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
+ }
+
+ .lista-veiculos li strong {
+    margin: 16px 0;
+    display: block;
+ }
