@@ -253,7 +253,9 @@
             },
             invalidHandler: function(evento, validador){
                 let camposIncorretos = validador.numberOfInvalids();
-                console.log(camposIncorretos)
+                if(camposIncorretos){ 
+                    alert(`Existem ${camposIncorretos} campos incorretos`)
+                }
             }
         })
     })
